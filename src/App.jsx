@@ -9,7 +9,7 @@ function App() {
   const [inputValues, setInputValues] = useState({
     initialInvestment: 10000,
     annualInvestment: 1000,
-    expectedGrowth: 5,
+    expectedReturn: 5,
     duration: 10,
   });
 
@@ -22,7 +22,7 @@ function App() {
     setInputValues((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputID]: newValue,
+        [inputID]: +newValue,
       };
     });
   }
@@ -30,7 +30,7 @@ function App() {
   return (
     <div>
       <Header />
-      <UserInput onChange={handleUserInput} userInput={inputValues} />
+      <UserInput userInput={inputValues} onChange={handleUserInput} />
       <Results userInput={inputValues} />
     </div>
   );
