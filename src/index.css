@@ -62,6 +62,9 @@ body {
   color: #c2e9e0;
   font-size: 1rem;
 }
+::placeholder {
+  color: white;
+}
 
 #result {
   max-width: 50rem;
