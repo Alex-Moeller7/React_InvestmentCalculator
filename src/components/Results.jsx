@@ -27,8 +27,8 @@ export default function Results({ userInput }) {
                 <td>{yearlyData.year}</td>
                 <td>{formatter.format(yearlyData.valueEndOfYear)}</td>
                 <td>{formatter.format(yearlyData.interest)}</td>
-                <td>{formatter.format(yearlyData.totalInterest)}</td>
-                <td>{formatter.format(yearlyData.totalAmountInvested)}</td>
+                <td>{formatter.format(totalInterest)}</td>
+                <td>{formatter.format(totalAmountInvested)}</td>
               </tr>
             );
           })}
