@@ -90,3 +90,24 @@ body {
 ::placeholder {
   color: white;
 }
+
+.footer {
+  text-align: center;
+  margin: 2rem 3rem;
+  padding: 0.8rem;
+}
+
+.definitions-title {
+  font-size: 1rem;
+}
+
+.definitions {
+  font-size: 0.85rem;
+  text-align: left;
+  display: inline-block;
+}
+
+#Note {
+  font-size: 0.75rem;
+  text-align: center;
+}

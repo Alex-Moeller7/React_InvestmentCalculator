@@ -27,6 +27,7 @@ function App() {
     });
   }
 
+  //Check if user tried to enter 0 for duration
   const inputValidation = inputValues.duration >= 1;
 
   return (
